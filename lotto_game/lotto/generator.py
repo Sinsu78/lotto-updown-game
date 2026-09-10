@@ -16,8 +16,14 @@ class LottoGenerator:
         lt2 = []
         print("\n======== 수동 번호 입력 ========")
         while len(lt2) < 6:
-            ltn = int(input("번호를 입력하세요\n>> "))
-            lt2.append(ltn)
+            ltn = int(input("수동 번호 입력"))
+            if ltn < 1 or ltn > 45:
+                print("1에서 45 사이의 숫자를 입력해주세요.")
+            elif ltn in lt2:
+                print("중복입니다. 다른 숫자를 입력해주세요.")
+                continue
+            else:
+                lt2.append(ltn)
 
         print(f"\n추첨 번호: {lt2}")
         self.history.append(lt2)
@@ -32,6 +38,12 @@ class LottoGenerator:
 
             if ltn2 == 0:
                 break
+            elif ltn2 < 1 or ltn2 > 45:
+                print("1에서 45 사이의 숫자를 입력해주세요.")
+            elif ltn2 in lt3:
+                print("중복입니다. 다른 숫자를 입력해주세요.")
+            else:
+                lt3.append(ltn2)
 
         while len(lt3) < 6: # 3 - 2 남은 번호 자동설정
             ltm = random.randint(1,45)
@@ -45,5 +57,11 @@ class LottoGenerator:
         print(f"\n추첨 번호: {lt3}")
 
     def history_list(self):
-        for i in self.history[-5:]:
-            print(i, end=", ")
+        if not self.history:
+            print("저장된 로또 이력이 없습니다.")
+            return
+
+        print(f"로또 이력 총 {len(self.history)}회입니다.")
+
+        for round_number, numbers in enumerate(self.history, 1):
+            print(f"{round_number}회: {numbers}")

@@ -10,12 +10,19 @@ class UpDownGame:
         
 
     def play(self):
+        print(f"1에서 {self.level_range}까지 숫자 중에 하나를 맞혀보세요")
+
         while True:
-            i = int(input("숫자를 입력하세요\n>> "))
+            try:
+                i = int(input("숫자 입력: "))
+            except ValueError:
+                print("숫자로 입력해주세요.")
+                continue
+
             self.count += 1
 
             if self.answer > i:
-                print("더 높은 숫자입니다\n")
+                print("더 높이")
 
             elif self.answer < i:
                 print("더 낮은 숫자입니다\n")
