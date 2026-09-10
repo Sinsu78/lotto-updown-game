@@ -11,17 +11,17 @@ class UpDownGame:
 
     def play(self):
         while True:
-            i = int(input("숫자입력"))
+            i = int(input("숫자를 입력하세요\n>> "))
             self.count += 1
 
             if self.answer > i:
-                print("더높이")
+                print("더 높은 숫자입니다\n")
 
             elif self.answer < i:
-                print("더 낮게")
+                print("더 낮은 숫자입니다\n")
 
             elif self.answer == i:
-                print("정답")
+                print(f"{self.answer} -> 정답입니다\n")
                 print(f"{self.count}번 만에 성공!")
 
                 return self.count
