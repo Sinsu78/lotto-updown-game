@@ -17,20 +17,20 @@ class GameApp:
     def run(self):
         while True:
             Menu.main_menu()
-            n = int(input("번호 선택"))
+            n = int(input("번호를 선택하세요\n>> "))
 
             if n == 1:
                 Menu.mode_select()
-                o = int(input("번호 선택"))
+                o = int(input("번호를 선택하세요\n>> "))
 
                 if o == 1:
                     while True:
                         Menu.lotto_menu()
-                        p = int(input("번호 선택"))
+                        p = int(input("번호를 선택하세요\n>> "))
 
                         if p == 1 :
                             Menu.lotto_menu2()
-                            n2 = int(input("번호 선택"))
+                            n2 = int(input("번호를 선택하세요\n>> "))
 
                             if n2 == 1:
                                 self.lotto.lotto_auto()
@@ -54,13 +54,14 @@ class GameApp:
                 elif o == 2:
                     while True:
                         Menu.up_down_menu()
-                        i = int(input("번호 입력"))
+                        i = int(input("번호를 선택하세요\n>> "))
                         
 
                         if i == 1:
-                            nick = input("닉네임 입력")
+                            nick = input("\n닉네임을 입력하세요\n>> ")
                             Menu.up_down_level()
-                            level = int(input("난이도 선택"))
+                            level = int(input("난이도를 선택하세요\n>> "))
+                            print()
 
                             if level == 1:
                                 self.updown = UpDownGame(nick, 1000)
@@ -86,7 +87,7 @@ class GameApp:
 
             elif n == 2:
                 Menu.hs_rank()
-                k = int(input("번호 입력"))
+                k = int(input("번호를 입력하세요\n>> "))
 
                 if k == 1:
                     self.lotto.history_list()

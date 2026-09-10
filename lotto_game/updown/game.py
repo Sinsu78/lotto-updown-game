@@ -25,10 +25,10 @@ class UpDownGame:
                 print("더 높이")
 
             elif self.answer < i:
-                print("더 낮게")
+                print("더 낮은 숫자입니다\n")
 
             elif self.answer == i:
-                print("정답")
+                print(f"{self.answer} -> 정답입니다\n")
                 print(f"{self.count}번 만에 성공!")
 
                 return self.count

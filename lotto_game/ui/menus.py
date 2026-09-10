@@ -1,59 +1,48 @@
 class Menu:
     @staticmethod
     def main_menu():
-        print()
-        print("게임")
-        print()
-        print("1. 게임모드 선택")
-        print("2. 과거 추천번호 이력 / 랭킹 보기")
-        print("3. 게임 종료")
-        print()
+        print("\n======== 메뉴 선택 ========")
+        print("1. 모드 선택")
+        print("2. 기록 보기")
+        print("3. 프로그램 종료\n")
 
     @staticmethod
     def mode_select():
-        print()
+        print("\n======== 모드 선택 ========")
         print("1. 로또번호 추첨")
-        print("2. 업앤다운")
-        print()
+        print("2. 업앤다운 게임\n")
+
 
     @staticmethod
     def lotto_menu():
-        print("로또번호 추첨")                
-        print()
-        print("1. 추첨")
-        print("2. 최근이력보기")
-        print("3. 종료")     
-        print()
+        print("\n======== 로또번호 추첨 ========")              
+        print("1. 추첨 방식 선택")
+        print("2. 추첨 이력 보기")
+        print("3. 종료하기\n")     
+
 
     @staticmethod
     def lotto_menu2():
+        print("\n======== 추첨 방식 선택 ========") 
         print("1. 자동")
         print("2. 수동")
-        print("3. 반자동")
+        print("3. 반자동\n")
 
     @staticmethod
     def up_down_menu():
-        print()
-        print("업앤다운 게임")
-        print()
-        print("1. 게임시작")
-        print("2. 게임종료")
-        print()
+        print("\n======== 업앤다운 게임 ========")
+        print("1. 게임 시작")
+        print("2. 종료하기\n")
 
     @staticmethod
     def up_down_level():
-        print()
+        print("\n======== 게임 난이도 선택 ========")
         print("1. 상")
         print("2. 중")
-        print("3. 하")
+        print("3. 하\n")
 
     @staticmethod
     def hs_rank():
-        print()
-        print("과거 추천번호 이력 / 랭킹 보기")
-        print()
-        print("1. 과거 추천번호 이력")
-        print("2. 랭킹 보기")
-        print()
-
-
+        print("\n======== 기록 보기 ========")
+        print("1. 로또번호 추첨 이력")
+        print("2. 업앤다운 게임 랭킹\n")
