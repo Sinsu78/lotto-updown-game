@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+lotto_history.txt
+ranking_history.txt
