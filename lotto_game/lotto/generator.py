@@ -34,7 +34,6 @@ class LottoGenerator:
         print("0 입력시 번호 입력을 종료합니다\n")
         while len(lt3) < 6: # 3 - 1 반자동 수동번호 추출
             ltn2 = int(input("번호를 입력하세요\n>> "))                          
-            lt3.append(ltn2)
 
             if ltn2 == 0:
                 break
