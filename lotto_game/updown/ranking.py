@@ -17,6 +17,9 @@ class RankingBoard:
     def show_ranking(self, top_n=5):
         ranked = sorted(self.players, key=lambda p: p.tries)
         ranked = ranked[:top_n]
+        print()
+        for rank, player in enumerate(ranked, start=1):
+            print(f"{rank}등 {player.name} {player.tries}")
 
         for rank, player in enumerate(ranked, start=1):
             print(f"{rank}등 {player.name} {player.tries}")
