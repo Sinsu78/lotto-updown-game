@@ -18,7 +18,8 @@ class Menu:
         print("\n======== 로또번호 추첨 ========")              
         print("1. 추첨 방식 선택")
         print("2. 추첨 이력 보기")
-        print("3. 종료하기\n")     
+        print("3. 추첨 이력 클리어")
+        print("4. 종료하기\n")     
 
 
     @staticmethod

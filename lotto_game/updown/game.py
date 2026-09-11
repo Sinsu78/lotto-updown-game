@@ -32,7 +32,7 @@ class UpDownGame:
             self.count += 1
 
             if self.answer > i:
-                print("더 높이")
+                print("더 높은 숫자입니다\n")
 
             elif self.answer < i:
                 print("더 낮은 숫자입니다\n")

@@ -52,7 +52,12 @@ class GameApp:
                             self.lotto.history_list()
 
                         elif p == 3:
-                            print("\n종료합니다")
+                            self.lotto.history.clear()
+                            self.lottostorage.save(self.lotto.history)
+                            print("로또 추첨 이력을 모두 삭제했습니다.")
+
+                        elif p == 4:
+                            print("종료")
                             break
                         else:
                             print("\n[WARN] 메뉴에 없는 번호입니다\n")

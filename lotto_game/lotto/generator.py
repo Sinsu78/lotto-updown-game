@@ -33,6 +33,7 @@ class LottoGenerator:
             else:
                 lt2.append(ltn)
 
+        lt2.sort()
         print(f"\n추첨 번호: {lt2}")
         self.history.append(lt2)
 
