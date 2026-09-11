@@ -63,7 +63,7 @@ class GameApp:
                         i = self.get_int_input("번호를 입력하세요\n>> ")
                         
                         if i == 1:
-                            nick = input("\n닉네임을 입력하세요\n>> ")
+                            nick = input("닉네임 입력: ")
                             Menu.up_down_level()
                             level = self.get_int_input("난이도를 선택하세요\n>> ")
 

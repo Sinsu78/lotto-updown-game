@@ -13,7 +13,6 @@ class RankingBoard:
     def add_result(self,player):
         self.players.append(player)
 
-<<<<<<< HEAD
 
     def show_ranking(self, top_n=5):
         ranked = sorted(self.players, key=lambda p: p.tries)
@@ -21,11 +20,6 @@ class RankingBoard:
         print()
         for rank, player in enumerate(ranked, start=1):
             print(f"{rank}등 {player.name} {player.tries}")
-=======
-    def show_ranking(self):
-        rank_try = sorted(self.players, key = lambda x : (x.tries))
-        rank = 0
-        for i in rank_try:
-            rank += 1
-            print(f"{rank}등 {i.name} , {i.tries}회")
->>>>>>> 75dd9fd4dc503964032254976e14ab79d8cd8131
+
+        for rank, player in enumerate(ranked, start=1):
+            print(f"{rank}등 {player.name} {player.tries}")
