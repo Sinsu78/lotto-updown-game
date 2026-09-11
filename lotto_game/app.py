@@ -52,6 +52,11 @@ class GameApp:
                             self.lotto.history_list()
 
                         elif p == 3:
+                            self.lotto.history.clear()
+                            self.lottostorage.save(self.lotto.history)
+                            print("로또 추첨 이력을 모두 삭제했습니다.")
+
+                        elif p == 4:
                             print("종료")
                             break
                         else:

@@ -16,7 +16,7 @@ class LottoGenerator:
         lt2 = []
         print("\n======== 수동 번호 입력 ========")
         while len(lt2) < 6:
-            ltn = int(input("수동 번호 입력"))
+            ltn = int(input("수동 번호 입력: "))
             if ltn < 1 or ltn > 45:
                 print("1에서 45 사이의 숫자를 입력해주세요.")
             elif ltn in lt2:
@@ -25,6 +25,7 @@ class LottoGenerator:
             else:
                 lt2.append(ltn)
 
+        lt2.sort()
         print(f"\n추첨 번호: {lt2}")
         self.history.append(lt2)
 
