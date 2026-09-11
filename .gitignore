@@ -1,4 +1,11 @@
 __pycache__/
 *.pyc
-lotto_history.txt
-ranking_history.txt
+<<<<<<< HEAD
+.venv/
+venv/
+.env
+data/
+logs/
+*.log
+*.json
+*.txt
