@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+<<<<<<< HEAD
 .venv/
 venv/
 .env
@@ -7,3 +8,7 @@ data/
 logs/
 *.log
 *.json
+=======
+lotto_history.txt
+ranking_history.txt
+>>>>>>> 75dd9fd4dc503964032254976e14ab79d8cd8131
