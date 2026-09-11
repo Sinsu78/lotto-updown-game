@@ -52,12 +52,6 @@ class LottoGenerator:
                 print("[WARN] 중복된 번호입니다\n")
             else:
                 lt3.append(ltn2)
-            elif ltn2 < 1 or ltn2 > 45:
-                print("1에서 45 사이의 숫자를 입력해주세요.")
-            elif ltn2 in lt3:
-                print("중복입니다. 다른 숫자를 입력해주세요.")
-            else:
-                lt3.append(ltn2)
 
         while len(lt3) < 6: # 3 - 2 남은 번호 자동설정
             ltm = random.randint(1,45)
